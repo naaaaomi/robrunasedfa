@@ -9,11 +9,21 @@ extern "C" {
 #endif
 
 #define BR_MAGIC 0x57444D31u
-#define BR_VERSION 14u
+#define BR_VERSION 15u
 #define BR_COLOR_COUNT 15
 
-/* Shared schema for the WebView, defaults and on-disk settings.
- * Each entry is a field, default, minimum and maximum. */
+/* Dedicated palette entries for role-based player chams and vehicle chams.
+ * Slots 10-13 were already part of BR_Config, so the shared layout is unchanged.
+ */
+#define BR_COLOR_CITIZEN_CHAMS 10
+#define BR_COLOR_VEHICLE_CHAMS 11
+#define BR_COLOR_COP_CHAMS 12
+#define BR_COLOR_CRIMINAL_CHAMS 13
+/* Retain the old name as an alias for source compatibility. */
+#define BR_COLOR_PLAYER_CHAMS BR_COLOR_CITIZEN_CHAMS
+
+    /* Shared schema for the WebView, defaults and on-disk settings.
+     * Each entry is a field, default, minimum and maximum. */
 #define BR_SETTINGS(X) \
     X(enabled, 1, 0, 1) \
     X(show_box, 1, 0, 1) \
@@ -44,6 +54,14 @@ extern "C" {
     X(aa_bone, 0, 0, 9) \
     X(aa_los_on, 0, 0, 1) \
     X(aa_closest_first, 0, 0, 1) \
+    X(aa_mode, 0, 0, 1) \
+    X(aa_activation, 0, 0, 2) \
+    X(aa_fill, 0, 0, 1) \
+    X(aa_gradient_fill, 0, 0, 1) \
+    X(aa_spin, 0, 0, 1) \
+    X(aa_opacity, 18, 0, 100) \
+    X(aa_spin_speed, 90, 0, 360) \
+    X(aa_camera_fov, 0, 0, 120) \
     X(show_loot, 0, 0, 1) \
     X(show_loot_nodes, 0, 0, 1) \
     X(loot_tier_none, 1, 0, 1) \
@@ -64,27 +82,27 @@ extern "C" {
     X(show_vehicle_markers, 0, 0, 1) \
     X(show_vehicle_occupants, 0, 0, 1)
 
-typedef struct BR_Config {
-    unsigned int magic, version;
+    typedef struct BR_Config {
+        unsigned int magic, version;
 #define BR_DECLARE(field, initial, minimum, maximum) int field;
-    BR_SETTINGS(BR_DECLARE)
+        BR_SETTINGS(BR_DECLARE)
 #undef BR_DECLARE
-    struct { unsigned char rgb[3]; } color[BR_COLOR_COUNT];
+            struct { unsigned char rgb[3]; } color[BR_COLOR_COUNT];
 
-    int menu_open;
-    int telem_targets;
-    int telem_game_pid;
-    int telem_cham_n;
-    int telem_los_state; /* 0 off, 1 loading/stale, 2 ready */
+        int menu_open;
+        int telem_targets;
+        int telem_game_pid;
+        int telem_cham_n;
+        int telem_los_state; /* 0 off, 1 loading/stale, 2 ready */
 
 #ifdef RR_PORT_DIAGNOSTICS
-    int show_vehicles;
+        int show_vehicles;
 #endif
-} BR_Config;
+    } BR_Config;
 
-/* Unrecognized values use the same no-rarity bucket as the loot renderer. */
-static int br_loot_rarity_visible(const BR_Config* config, int rarity) {
-    switch (rarity) {
+    /* Unrecognized values use the same no-rarity bucket as the loot renderer. */
+    static int br_loot_rarity_visible(const BR_Config* config, int rarity) {
+        switch (rarity) {
         case 1: return config->loot_tier_common;
         case 2: return config->loot_tier_uncommon;
         case 3: return config->loot_tier_rare;
@@ -92,18 +110,18 @@ static int br_loot_rarity_visible(const BR_Config* config, int rarity) {
         case 5: return config->loot_tier_legendary;
         case 6: return config->loot_tier_exotic;
         default: return config->loot_tier_none;
+        }
     }
-}
 
-BR_Config* br_get(void);
-int br_config_set(BR_Config* config, const char* key, int value);
-int br_config_save(void);
-int br_config_load(void);
+    BR_Config* br_get(void);
+    int br_config_set(BR_Config* config, const char* key, int value);
+    int br_config_save(void);
+    int br_config_load(void);
 
-int br_start_menu(void);
-void br_stop_menu(void);
-void br_set_menu_visible(int visible);
-void br_request_toggle(void);
+    int br_start_menu(void);
+    void br_stop_menu(void);
+    void br_set_menu_visible(int visible);
+    void br_request_toggle(void);
 
 #ifdef __cplusplus
 }

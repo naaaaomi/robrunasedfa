@@ -1,0 +1,689 @@
+44031500 init start pid=12792
+44031625 regions=2911 after 125 ms
+44031625 entry_gom=0x76E1A980 class=0x321BCAA0
+44031625 entry_roots_class world=0x23AD0E000 battle=0x242EDD2D0 bm=0x23AD1E000 camera=0x23DB531C0
+44031625 fast entry world=0x23AD0E000 battle=0x242EDD2D0 char=0x320141C0
+44031625 char=0x320141C0 after 125 ms
+44031625 entry_roots_class world=0x23AD0E000 battle=0x242EDD2D0 bm=0x23AD1E000 camera=0x23DB531C0
+44031625 entry_roots=1 world=0x23AD0E000 battle=0x242EDD2D0 after 125 ms
+44031625 world_class=0x31FB91A0 after 125 ms
+44031625 world_instance=0x23AD0E000 after 125 ms
+44031625 instance_scan=8 after 125 ms
+44031625 init done after 125 ms
+44032125 entry_roots_class world=0x23AD0E000 battle=0x242EDD2D0 bm=0x23AD1E000 camera=0x23DB531C0
+44040437 entry_roots_class world=0x23AD0E000 battle=0x242EDD2D0 bm=0x23AD1E000 camera=0x23DB531C0
+44048718 entry_roots_class world=0x23AD0E000 battle=0x242EDD2D0 bm=0x23AD1E000 camera=0x23DB531C0
+44057000 entry_roots_class world=0x23AD0E000 battle=0x242EDD2D0 bm=0x23AD1E000 camera=0x23DB531C0
+44065250 entry_roots_class world=0x23AD0E000 battle=0x242EDD2D0 bm=0x23AD1E000 camera=0x23DB531C0
+44073625 entry_roots_class world=0x23AD0E000 battle=0x242EDD2D0 bm=0x23AD1E000 camera=0x23DB531C0
+44081921 entry_roots_class world=0x23AD0E000 battle=0x242EDD2D0 bm=0x23AD1E000 camera=0x23DB531C0
+44090171 entry_roots_class world=0x23AD0E000 battle=0x242EDD2D0 bm=0x23AD1E000 camera=0x23DB531C0
+44098453 entry_roots_class world=0x23AD0E000 battle=0x242EDD2D0 bm=0x23AD1E000 camera=0x23DB531C0
+44106796 entry_roots_class world=0x23AD0E000 battle=0x242EDD2D0 bm=0x23AD1E000 camera=0x23DB531C0
+44115187 entry_roots_class world=0x23AD0E000 battle=0x242EDD2D0 bm=0x23AD1E000 camera=0x23DB531C0
+44135312 init start pid=12792
+44135437 regions=2925 after 125 ms
+44135437 entry_gom=0x76E1A980 class=0x321BCAA0
+44135437 entry_roots_class world=0x23AD0E000 battle=0x242EDD2D0 bm=0x23AD1E000 camera=0x23DB531C0
+44135437 fast entry world=0x23AD0E000 battle=0x242EDD2D0 char=0x320141C0
+44135437 char=0x320141C0 after 125 ms
+44135437 entry_roots_class world=0x23AD0E000 battle=0x242EDD2D0 bm=0x23AD1E000 camera=0x23DB531C0
+44135453 entry_roots=1 world=0x23AD0E000 battle=0x242EDD2D0 after 141 ms
+44135453 world_class=0x31FB91A0 after 141 ms
+44135468 world_instance=0x23AD0E000 after 156 ms
+44135468 instance_scan=11 after 156 ms
+44135468 init done after 156 ms
+44135968 entry_roots_class world=0x23AD0E000 battle=0x242EDD2D0 bm=0x23AD1E000 camera=0x23DB531C0
+44139843 init start pid=12792
+44139984 regions=2918 after 141 ms
+44140078 entry_gom=0x76E1A980 class=0x321BCAA0
+44140093 entry_roots_class world=0x23AD0E000 battle=0x242EDD2D0 bm=0x23AD1E000 camera=0x23DB531C0
+44140093 fast entry world=0x23AD0E000 battle=0x242EDD2D0 char=0x320141C0
+44140093 char=0x320141C0 after 250 ms
+44140093 entry_roots_class world=0x23AD0E000 battle=0x242EDD2D0 bm=0x23AD1E000 camera=0x23DB531C0
+44140093 entry_roots=1 world=0x23AD0E000 battle=0x242EDD2D0 after 250 ms
+44140109 world_class=0x31FB91A0 after 266 ms
+44140109 world_instance=0x23AD0E000 after 266 ms
+44140109 instance_scan=11 after 266 ms
+44140109 init done after 266 ms
+44140609 entry_roots_class world=0x23AD0E000 battle=0x242EDD2D0 bm=0x23AD1E000 camera=0x23DB531C0
+44174609 init start pid=12792
+44174718 regions=2909 after 109 ms
+44174718 entry_gom=0x76E1A980 class=0x321BCAA0
+44174734 entry_roots_class world=0x23AD0E000 battle=0x242EDD2D0 bm=0x23AD1E000 camera=0x23DB531C0
+44174734 fast entry world=0x23AD0E000 battle=0x242EDD2D0 char=0x320141C0
+44174734 char=0x320141C0 after 125 ms
+44174734 entry_roots_class world=0x23AD0E000 battle=0x242EDD2D0 bm=0x23AD1E000 camera=0x23DB531C0
+44174734 entry_roots=1 world=0x23AD0E000 battle=0x242EDD2D0 after 125 ms
+44174734 world_class=0x31FB91A0 after 125 ms
+44174734 world_instance=0x23AD0E000 after 125 ms
+44174734 instance_scan=6 after 125 ms
+44174734 init done after 125 ms
+44175250 entry_roots_class world=0x23AD0E000 battle=0x242EDD2D0 bm=0x23AD1E000 camera=0x23DB531C0
+44183390 entry_roots_class world=0x23AD0E000 battle=0x242EDD2D0 bm=0x23AD1E000 camera=0x23DB531C0
+44191546 entry_roots_class world=0x23AD0E000 battle=0x242EDD2D0 bm=0x23AD1E000 camera=0x23DB531C0
+44199718 entry_roots_class world=0x23AD0E000 battle=0x242EDD2D0 bm=0x23AD1E000 camera=0x23DB531C0
+44251625 init start pid=12792
+44251750 regions=2897 after 125 ms
+44251750 entry_gom=0x76E1A980 class=0x321BCAA0
+44251750 entry_roots_class world=0x23AD0E000 battle=0x242EDD2D0 bm=0x23AD1E000 camera=0x23DB531C0
+44251750 fast entry world=0x23AD0E000 battle=0x242EDD2D0 char=0x320141C0
+44251750 char=0x320141C0 after 125 ms
+44251765 entry_roots_class world=0x23AD0E000 battle=0x242EDD2D0 bm=0x23AD1E000 camera=0x23DB531C0
+44251765 entry_roots=1 world=0x23AD0E000 battle=0x242EDD2D0 after 140 ms
+44251765 world_class=0x31FB91A0 after 140 ms
+44251765 world_instance=0x23AD0E000 after 140 ms
+44251781 instance_scan=4 after 156 ms
+44251781 init done after 156 ms
+44252296 entry_roots_class world=0x23AD0E000 battle=0x242EDD2D0 bm=0x23AD1E000 camera=0x23DB531C0
+44260468 entry_roots_class world=0x23AD0E000 battle=0x242EDD2D0 bm=0x23AD1E000 camera=0x23DB531C0
+44268625 entry_roots_class world=0x23AD0E000 battle=0x242EDD2D0 bm=0x23AD1E000 camera=0x23DB531C0
+44276781 entry_roots_class world=0x23AD0E000 battle=0x242EDD2D0 bm=0x23AD1E000 camera=0x23DB531C0
+45405218 init start pid=12792
+45405375 regions=3547 after 157 ms
+45405375 entry_gom=0x76E1A980 class=0x321BCAA0
+45405375 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+45405375 fast entry world=0x2CE194000 battle=0x2CC317960 char=0x320141C0
+45405375 char=0x320141C0 after 157 ms
+45405375 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+45405375 entry_roots=1 world=0x2CE194000 battle=0x2CC317960 after 157 ms
+45405375 world_class=0x31FB91A0 after 157 ms
+45405375 world_instance=0x2CE194000 after 157 ms
+45405375 instance_scan=3 after 157 ms
+45405375 init done after 157 ms
+45405875 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+45414046 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+45422203 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+45430406 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+45438609 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+45446953 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+45455156 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+45463343 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+45471500 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+45479656 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+45488000 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+45496203 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+45504421 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+45512593 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+45520796 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+45529156 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+45537390 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+45545625 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+45553906 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+45562187 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+45570640 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+45578937 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+45587250 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+45595562 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+45603875 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+45612343 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+45620640 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+45912937 init start pid=12792
+45913078 regions=3524 after 141 ms
+45913187 entry_gom=0x76E1A980 class=0x321BCAA0
+45913187 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+45913187 fast entry world=0x2CE194000 battle=0x2CC317960 char=0x320141C0
+45913187 char=0x320141C0 after 250 ms
+45913187 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+45913187 entry_roots=1 world=0x2CE194000 battle=0x2CC317960 after 250 ms
+45913187 world_class=0x31FB91A0 after 250 ms
+45913187 world_instance=0x2CE194000 after 250 ms
+45913187 instance_scan=7 after 250 ms
+45913187 init done after 250 ms
+45913687 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+45921968 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+45930281 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+45938484 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+45946703 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+45955125 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+45963359 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+45983312 init start pid=12792
+45983468 regions=3517 after 156 ms
+45983468 entry_gom=0x76E1A980 class=0x321BCAA0
+45983468 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+45983468 fast entry world=0x2CE194000 battle=0x2CC317960 char=0x320141C0
+45983484 char=0x320141C0 after 172 ms
+45983500 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+45983500 entry_roots=1 world=0x2CE194000 battle=0x2CC317960 after 188 ms
+45983500 world_class=0x31FB91A0 after 188 ms
+45983500 world_instance=0x2CE194000 after 188 ms
+45983500 instance_scan=3 after 188 ms
+45983500 init done after 188 ms
+45984015 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+45992265 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46000515 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46008750 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46016968 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46025328 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46033500 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46041703 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46049984 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46058500 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46066984 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46075296 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46083593 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46091921 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46100250 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46111093 init start pid=12792
+46111234 regions=3541 after 141 ms
+46111234 entry_gom=0x76E1A980 class=0x321BCAA0
+46111234 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46111234 fast entry world=0x2CE194000 battle=0x2CC317960 char=0x320141C0
+46111234 char=0x320141C0 after 141 ms
+46111234 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46111234 entry_roots=1 world=0x2CE194000 battle=0x2CC317960 after 141 ms
+46111234 world_class=0x31FB91A0 after 141 ms
+46111234 world_instance=0x2CE194000 after 141 ms
+46111234 instance_scan=6 after 141 ms
+46111234 init done after 141 ms
+46111734 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46120015 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46126968 init start pid=12792
+46127125 regions=3534 after 157 ms
+46127125 entry_gom=0x76E1A980 class=0x321BCAA0
+46127125 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46127140 fast entry world=0x2CE194000 battle=0x2CC317960 char=0x320141C0
+46127140 char=0x320141C0 after 172 ms
+46127140 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46127140 entry_roots=1 world=0x2CE194000 battle=0x2CC317960 after 172 ms
+46127140 world_class=0x31FB91A0 after 172 ms
+46127140 world_instance=0x2CE194000 after 172 ms
+46127140 instance_scan=3 after 172 ms
+46127140 init done after 172 ms
+46127640 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46128843 init start pid=12792
+46129046 regions=3534 after 203 ms
+46129078 entry_gom=0x76E1A980 class=0x321BCAA0
+46129078 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46129078 fast entry world=0x2CE194000 battle=0x2CC317960 char=0x320141C0
+46129078 char=0x320141C0 after 235 ms
+46129078 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46129078 entry_roots=1 world=0x2CE194000 battle=0x2CC317960 after 235 ms
+46129078 world_class=0x31FB91A0 after 235 ms
+46129078 world_instance=0x2CE194000 after 235 ms
+46129078 instance_scan=3 after 235 ms
+46129093 init done after 250 ms
+46129593 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46130296 init start pid=12792
+46130515 regions=3535 after 219 ms
+46130515 entry_gom=0x76E1A980 class=0x321BCAA0
+46130515 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46130515 fast entry world=0x2CE194000 battle=0x2CC317960 char=0x320141C0
+46130515 char=0x320141C0 after 219 ms
+46130515 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46130515 entry_roots=1 world=0x2CE194000 battle=0x2CC317960 after 219 ms
+46130515 world_class=0x31FB91A0 after 219 ms
+46130515 world_instance=0x2CE194000 after 219 ms
+46130515 instance_scan=4 after 219 ms
+46130531 init done after 235 ms
+46131031 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46135937 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46137890 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46139328 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46144250 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46146156 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46147578 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46152453 init start pid=12792
+46152593 regions=3525 after 140 ms
+46152593 entry_gom=0x76E1A980 class=0x321BCAA0
+46152593 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46152593 fast entry world=0x2CE194000 battle=0x2CC317960 char=0x320141C0
+46152593 char=0x320141C0 after 140 ms
+46152593 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46152593 entry_roots=1 world=0x2CE194000 battle=0x2CC317960 after 140 ms
+46152593 world_class=0x31FB91A0 after 140 ms
+46152593 world_instance=0x2CE194000 after 140 ms
+46152609 instance_scan=6 after 156 ms
+46152609 init done after 156 ms
+46153109 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46161328 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46169484 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46177687 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46185875 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46194187 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46202421 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46210625 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46218796 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46226968 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46235296 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46243484 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46251671 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46259906 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46268062 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46276421 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46284578 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46292796 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46301187 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46309421 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46317812 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46325984 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46334140 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46342328 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46350484 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46358781 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46366953 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46375171 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46383328 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46391546 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46399921 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46408125 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46416296 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46424468 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46432640 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46440953 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46449109 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46457296 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46465468 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46473703 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46482109 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46490343 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46498562 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46506765 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46515125 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46523328 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46531546 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46539734 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46547890 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46556187 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46564359 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46572515 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46580656 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46588968 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46597484 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46605828 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46614140 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46622468 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46630765 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46639281 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46647578 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46655906 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46664250 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46672578 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46680968 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46689156 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46697359 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46705531 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46713765 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46722093 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46730250 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46738437 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46746640 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46754843 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46763203 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46771406 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46779625 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46787843 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46796234 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46804484 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46812734 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46821062 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46829312 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46837718 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46846109 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46854484 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46862890 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46871312 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46879359 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46887796 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46896250 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46904703 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46913218 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46921234 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46929515 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46937718 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46945953 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46954140 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46962453 entry_roots_class world=0x2CE194000 battle=0x2CC317960 bm=0x2CA147800 camera=0x2CFF012A0
+46986781 entry_roots_class world=0x2D093C000 battle=0x2D879EF00 bm=0x2CBDD5800 camera=0x0
+46994843 entry_roots_class world=0x2D093C000 battle=0x2D879EF00 bm=0x2CBDD5800 camera=0x2D8467B60
+47003031 entry_roots_class world=0x2D093C000 battle=0x2D879EF00 bm=0x2CBDD5800 camera=0x2D8467B60
+47011218 entry_roots_class world=0x2D093C000 battle=0x2D879EF00 bm=0x2CBDD5800 camera=0x2D8467B60
+47019375 entry_roots_class world=0x2D093C000 battle=0x2D879EF00 bm=0x2CBDD5800 camera=0x2D8467B60
+47027609 entry_roots_class world=0x2D093C000 battle=0x2D879EF00 bm=0x2CBDD5800 camera=0x2D8467B60
+47036015 entry_roots_class world=0x2D093C000 battle=0x2D879EF00 bm=0x2CBDD5800 camera=0x2D8467B60
+47044343 entry_roots_class world=0x2D093C000 battle=0x2D879EF00 bm=0x2CBDD5800 camera=0x2D8467B60
+47052625 entry_roots_class world=0x2D093C000 battle=0x2D879EF00 bm=0x2CBDD5800 camera=0x2D8467B60
+47061015 entry_roots_class world=0x2D093C000 battle=0x2D879EF00 bm=0x2CBDD5800 camera=0x2D8467B60
+47069500 entry_roots_class world=0x2D093C000 battle=0x2D879EF00 bm=0x2CBDD5800 camera=0x2D8467B60
+47077562 entry_roots_class world=0x2D093C000 battle=0x2D879EF00 bm=0x2CBDD5800 camera=0x2D8467B60
+47085859 entry_roots_class world=0x2D093C000 battle=0x2D879EF00 bm=0x2CBDD5800 camera=0x2D8467B60
+47094171 entry_roots_class world=0x2D093C000 battle=0x2D879EF00 bm=0x2CBDD5800 camera=0x2D8467B60
+47102421 entry_roots_class world=0x2D093C000 battle=0x2D879EF00 bm=0x2CBDD5800 camera=0x2D8467B60
+47110671 entry_roots_class world=0x2D093C000 battle=0x2D879EF00 bm=0x2CBDD5800 camera=0x2D8467B60
+47118718 entry_roots_class world=0x2D093C000 battle=0x2D879EF00 bm=0x2CBDD5800 camera=0x2D8467B60
+47126968 entry_roots_class world=0x2D093C000 battle=0x2D879EF00 bm=0x2CBDD5800 camera=0x2D8467B60
+47135234 entry_roots_class world=0x2D093C000 battle=0x2D879EF00 bm=0x2CBDD5800 camera=0x2D8467B60
+47143468 entry_roots_class world=0x2D093C000 battle=0x2D879EF00 bm=0x2CBDD5800 camera=0x2D8467B60
+47151734 entry_roots_class world=0x2D093C000 battle=0x2D879EF00 bm=0x2CBDD5800 camera=0x2D8467B60
+47160156 entry_roots_class world=0x2D093C000 battle=0x2D879EF00 bm=0x2CBDD5800 camera=0x2D8467B60
+47168484 entry_roots_class world=0x2D093C000 battle=0x2D879EF00 bm=0x2CBDD5800 camera=0x2D8467B60
+47176765 entry_roots_class world=0x2D093C000 battle=0x2D879EF00 bm=0x2CBDD5800 camera=0x2D8467B60
+47185078 entry_roots_class world=0x2D093C000 battle=0x2D879EF00 bm=0x2CBDD5800 camera=0x2D8467B60
+47193078 entry_roots_class world=0x2D093C000 battle=0x2D879EF00 bm=0x2CBDD5800 camera=0x2D8467B60
+47201312 entry_roots_class world=0x2D093C000 battle=0x2D879EF00 bm=0x2CBDD5800 camera=0x2D8467B60
+47209531 entry_roots_class world=0x2D093C000 battle=0x2D879EF00 bm=0x2CBDD5800 camera=0x2D8467B60
+47217781 entry_roots_class world=0x2D093C000 battle=0x2D879EF00 bm=0x2CBDD5800 camera=0x2D8467B60
+47226015 entry_roots_class world=0x2D093C000 battle=0x2D879EF00 bm=0x2CBDD5800 camera=0x2D8467B60
+47234375 entry_roots_class world=0x2D093C000 battle=0x2D879EF00 bm=0x2CBDD5800 camera=0x2D8467B60
+47242593 entry_roots_class world=0x2D093C000 battle=0x2D879EF00 bm=0x2CBDD5800 camera=0x2D8467B60
+47250828 entry_roots_class world=0x2D093C000 battle=0x2D879EF00 bm=0x2CBDD5800 camera=0x2D8467B60
+47259062 entry_roots_class world=0x2D093C000 battle=0x2D879EF00 bm=0x2CBDD5800 camera=0x2D8467B60
+47267296 entry_roots_class world=0x2D093C000 battle=0x2D879EF00 bm=0x2CBDD5800 camera=0x2D8467B60
+47275671 entry_roots_class world=0x2D093C000 battle=0x2D879EF00 bm=0x2CBDD5800 camera=0x2D8467B60
+47283906 entry_roots_class world=0x2D093C000 battle=0x2D879EF00 bm=0x2CBDD5800 camera=0x2D8467B60
+47292156 entry_roots_class world=0x2D093C000 battle=0x2D879EF00 bm=0x2CBDD5800 camera=0x2D8467B60
+47300359 entry_roots_class world=0x2D093C000 battle=0x2D879EF00 bm=0x2CBDD5800 camera=0x2D8467B60
+47308546 entry_roots_class world=0x2D093C000 battle=0x2D879EF00 bm=0x2CBDD5800 camera=0x2D8467B60
+47316843 entry_roots_class world=0x2D093C000 battle=0x2D879EF00 bm=0x2CBDD5800 camera=0x2D8467B60
+47325031 entry_roots_class world=0x2D093C000 battle=0x2D879EF00 bm=0x2CBDD5800 camera=0x2D8467B60
+48558765 init start pid=12792
+48558921 regions=3956 after 156 ms
+48558921 entry_gom=0x76E1A980 class=0x321BCAA0
+48558921 entry_roots_class world=0x2D093C000 battle=0x2D879EF00 bm=0x2CBDD5800 camera=0x2D8467B60
+48558921 fast entry world=0x2D093C000 battle=0x2D879EF00 char=0x320141C0
+48558921 char=0x320141C0 after 156 ms
+48558921 entry_roots_class world=0x2D093C000 battle=0x2D879EF00 bm=0x2CBDD5800 camera=0x2D8467B60
+48558921 entry_roots=1 world=0x2D093C000 battle=0x2D879EF00 after 156 ms
+48558921 world_class=0x31FB91A0 after 156 ms
+48558921 world_instance=0x2D093C000 after 156 ms
+48558921 instance_scan=4 after 156 ms
+48558921 init done after 156 ms
+48559421 entry_roots_class world=0x2D093C000 battle=0x2D879EF00 bm=0x2CBDD5800 camera=0x2D8467B60
+52515031 init start pid=12792
+52515187 regions=4035 after 156 ms
+52515187 entry_gom=0x76E1A980 class=0x321BCAA0
+52515203 entry_roots_class world=0x2D0C70000 battle=0x2D879EF00 bm=0x2CF891000 camera=0x2D8A48AF0
+52515203 fast entry world=0x2D0C70000 battle=0x2D879EF00 char=0x320141C0
+52515203 char=0x320141C0 after 172 ms
+52515203 entry_roots_class world=0x2D0C70000 battle=0x2D879EF00 bm=0x2CF891000 camera=0x2D8A48AF0
+52515203 entry_roots=1 world=0x2D0C70000 battle=0x2D879EF00 after 172 ms
+52515218 world_class=0x31FB91A0 after 187 ms
+52515218 world_instance=0x2D0C70000 after 187 ms
+52515218 instance_scan=2 after 187 ms
+52515218 init done after 187 ms
+52515734 entry_roots_class world=0x2D0C70000 battle=0x2D879EF00 bm=0x2CF891000 camera=0x2D8A48AF0
+52523921 entry_roots_class world=0x2D0C70000 battle=0x2D879EF00 bm=0x2CF891000 camera=0x2D8A48AF0
+52532171 entry_roots_class world=0x2D0C70000 battle=0x2D879EF00 bm=0x2CF891000 camera=0x2D8A48AF0
+52540453 entry_roots_class world=0x2D0C70000 battle=0x2D879EF00 bm=0x2CF891000 camera=0x2D8A48AF0
+52548765 entry_roots_class world=0x2D0C70000 battle=0x2D879EF00 bm=0x2CF891000 camera=0x2D8A48AF0
+52556765 entry_roots_class world=0x2D0C70000 battle=0x2D879EF00 bm=0x2CF891000 camera=0x2D8A48AF0
+52565046 init start pid=12792
+52565218 regions=4034 after 172 ms
+52565234 entry_gom=0x76E1A980 class=0x321BCAA0
+52565234 entry_roots_class world=0x2D0C70000 battle=0x2D879EF00 bm=0x2CF891000 camera=0x2D8A48AF0
+52565250 fast entry world=0x2D0C70000 battle=0x2D879EF00 char=0x320141C0
+52565265 char=0x320141C0 after 219 ms
+52565265 entry_roots_class world=0x2D0C70000 battle=0x2D879EF00 bm=0x2CF891000 camera=0x2D8A48AF0
+52565281 entry_roots=1 world=0x2D0C70000 battle=0x2D879EF00 after 235 ms
+52565281 world_class=0x31FB91A0 after 235 ms
+52565296 world_instance=0x2D0C70000 after 250 ms
+52565312 instance_scan=1 after 266 ms
+52565328 init done after 266 ms
+52565828 entry_roots_class world=0x2D0C70000 battle=0x2D879EF00 bm=0x2CF891000 camera=0x2D8A48AF0
+52574000 entry_roots_class world=0x2D0C70000 battle=0x2D879EF00 bm=0x2CF891000 camera=0x2D8A48AF0
+52582203 entry_roots_class world=0x2D0C70000 battle=0x2D879EF00 bm=0x2CF891000 camera=0x2D8A48AF0
+52590390 entry_roots_class world=0x2D0C70000 battle=0x2D879EF00 bm=0x2CF891000 camera=0x2D8A48AF0
+52598609 entry_roots_class world=0x2D0C70000 battle=0x2D879EF00 bm=0x2CF891000 camera=0x2D8A48AF0
+52607046 entry_roots_class world=0x2D0C70000 battle=0x2D879EF00 bm=0x2CF891000 camera=0x2D8A48AF0
+53533421 init start pid=10816
+53533562 regions=3145 after 141 ms
+53533562 entry_gom=0x76D1B940 class=0x321BCAA0
+53533562 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+53533562 fast entry world=0x240361000 battle=0x22D88ED20 char=0x320141C0
+53533562 char=0x320141C0 after 141 ms
+53533562 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+53533562 entry_roots=1 world=0x240361000 battle=0x22D88ED20 after 141 ms
+53533562 world_class=0x31FB91A0 after 141 ms
+53533562 world_instance=0x240361000 after 141 ms
+53533562 instance_scan=1 after 141 ms
+53533562 init done after 141 ms
+53534062 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+53668937 init start pid=10816
+53669078 regions=3123 after 125 ms
+53669078 entry_gom=0x76D1B940 class=0x321BCAA0
+53669078 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+53669078 fast entry world=0x240361000 battle=0x22D88ED20 char=0x320141C0
+53669078 char=0x320141C0 after 141 ms
+53669078 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+53669078 entry_roots=1 world=0x240361000 battle=0x22D88ED20 after 141 ms
+53669078 world_class=0x31FB91A0 after 141 ms
+53669078 world_instance=0x240361000 after 141 ms
+53669078 instance_scan=2 after 141 ms
+53669078 init done after 141 ms
+53669578 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+53677750 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+53685953 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+53694171 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+53738937 init start pid=10816
+53739078 regions=3130 after 141 ms
+53739078 entry_gom=0x76D1B940 class=0x321BCAA0
+53739078 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+53739078 fast entry world=0x240361000 battle=0x22D88ED20 char=0x320141C0
+53739078 char=0x320141C0 after 141 ms
+53739078 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+53739078 entry_roots=1 world=0x240361000 battle=0x22D88ED20 after 141 ms
+53739078 world_class=0x31FB91A0 after 141 ms
+53739078 world_instance=0x240361000 after 141 ms
+53739078 instance_scan=4 after 141 ms
+53739078 init done after 141 ms
+53739578 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+53747796 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+53755984 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+53764187 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+53850625 init start pid=10816
+53850750 regions=3152 after 125 ms
+53850750 entry_gom=0x76D1B940 class=0x321BCAA0
+53850750 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+53850750 fast entry world=0x240361000 battle=0x22D88ED20 char=0x320141C0
+53850750 char=0x320141C0 after 125 ms
+53850750 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+53850750 entry_roots=1 world=0x240361000 battle=0x22D88ED20 after 125 ms
+53850750 world_class=0x31FB91A0 after 125 ms
+53850765 world_instance=0x240361000 after 140 ms
+53850765 instance_scan=1 after 140 ms
+53850765 init done after 140 ms
+53851281 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+53859468 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+53867625 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+53875781 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+53883937 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+53892296 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+53900484 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+53908656 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+53916843 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+53925000 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+53933296 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+53941468 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+53949656 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+54052437 init start pid=10816
+54052546 regions=3148 after 109 ms
+54052546 entry_gom=0x76D1B940 class=0x321BCAA0
+54052546 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+54052546 fast entry world=0x240361000 battle=0x22D88ED20 char=0x320141C0
+54052562 char=0x320141C0 after 125 ms
+54052562 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+54052562 entry_roots=1 world=0x240361000 battle=0x22D88ED20 after 125 ms
+54052562 world_class=0x31FB91A0 after 125 ms
+54052578 world_instance=0x240361000 after 141 ms
+54052578 instance_scan=2 after 141 ms
+54052578 init done after 141 ms
+54053078 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+54061265 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+54069437 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+54101062 init start pid=10816
+54101171 regions=3151 after 109 ms
+54101171 entry_gom=0x76D1B940 class=0x321BCAA0
+54101171 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+54101171 fast entry world=0x240361000 battle=0x22D88ED20 char=0x320141C0
+54101171 char=0x320141C0 after 109 ms
+54101171 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+54101171 entry_roots=1 world=0x240361000 battle=0x22D88ED20 after 109 ms
+54101171 world_class=0x31FB91A0 after 109 ms
+54101171 world_instance=0x240361000 after 109 ms
+54101187 instance_scan=5 after 125 ms
+54101187 init done after 125 ms
+54101687 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+54109906 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+54118140 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+54126375 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+54137812 init start pid=10816
+54137921 regions=3143 after 109 ms
+54137921 entry_gom=0x76D1B940 class=0x321BCAA0
+54137921 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+54137921 fast entry world=0x240361000 battle=0x22D88ED20 char=0x320141C0
+54137921 char=0x320141C0 after 109 ms
+54137921 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+54137921 entry_roots=1 world=0x240361000 battle=0x22D88ED20 after 109 ms
+54137937 world_class=0x31FB91A0 after 125 ms
+54137937 world_instance=0x240361000 after 125 ms
+54137937 instance_scan=1 after 125 ms
+54137937 init done after 125 ms
+54138437 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+54146609 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+54168687 init start pid=10816
+54168812 regions=3151 after 125 ms
+54168812 entry_gom=0x76D1B940 class=0x321BCAA0
+54168812 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+54168812 fast entry world=0x240361000 battle=0x22D88ED20 char=0x320141C0
+54168812 char=0x320141C0 after 125 ms
+54168812 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+54168812 entry_roots=1 world=0x240361000 battle=0x22D88ED20 after 125 ms
+54168812 world_class=0x31FB91A0 after 125 ms
+54168812 world_instance=0x240361000 after 125 ms
+54168812 instance_scan=3 after 125 ms
+54168812 init done after 125 ms
+54169312 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+54177515 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+54185781 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+54206359 init start pid=10816
+54206500 regions=3146 after 141 ms
+54206500 entry_gom=0x76D1B940 class=0x321BCAA0
+54206500 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+54206500 fast entry world=0x240361000 battle=0x22D88ED20 char=0x320141C0
+54206500 char=0x320141C0 after 141 ms
+54206500 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+54206500 entry_roots=1 world=0x240361000 battle=0x22D88ED20 after 141 ms
+54206500 world_class=0x31FB91A0 after 141 ms
+54206500 world_instance=0x240361000 after 141 ms
+54206500 instance_scan=6 after 141 ms
+54206500 init done after 141 ms
+54207000 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+54215281 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+54223593 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+54231921 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+54244843 init start pid=10816
+54244968 regions=3135 after 125 ms
+54244968 entry_gom=0x76D1B940 class=0x321BCAA0
+54244968 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+54244968 fast entry world=0x240361000 battle=0x22D88ED20 char=0x320141C0
+54244968 char=0x320141C0 after 125 ms
+54244968 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+54244968 entry_roots=1 world=0x240361000 battle=0x22D88ED20 after 125 ms
+54244968 world_class=0x31FB91A0 after 125 ms
+54244968 world_instance=0x240361000 after 125 ms
+54244968 instance_scan=6 after 125 ms
+54244968 init done after 125 ms
+54245468 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+54253843 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+54279296 init start pid=10816
+54279437 regions=3119 after 141 ms
+54279437 entry_gom=0x76D1B940 class=0x321BCAA0
+54279437 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+54279437 fast entry world=0x240361000 battle=0x22D88ED20 char=0x320141C0
+54279437 char=0x320141C0 after 141 ms
+54279437 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+54279437 entry_roots=1 world=0x240361000 battle=0x22D88ED20 after 141 ms
+54279437 world_class=0x31FB91A0 after 141 ms
+54279437 world_instance=0x240361000 after 141 ms
+54279437 instance_scan=7 after 141 ms
+54279437 init done after 141 ms
+54279953 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+54288234 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+54296531 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+54304812 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+54313093 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+54321484 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+54329750 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+54338062 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+54346312 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+54354500 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+54362812 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+54380328 init start pid=10816
+54380468 regions=3136 after 140 ms
+54380468 entry_gom=0x76D1B940 class=0x321BCAA0
+54380468 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+54380468 fast entry world=0x240361000 battle=0x22D88ED20 char=0x320141C0
+54380468 char=0x320141C0 after 140 ms
+54380468 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+54380468 entry_roots=1 world=0x240361000 battle=0x22D88ED20 after 140 ms
+54380468 world_class=0x31FB91A0 after 140 ms
+54380468 world_instance=0x240361000 after 140 ms
+54380468 instance_scan=1 after 140 ms
+54380468 init done after 140 ms
+54380968 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+54389140 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+54397343 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+54405578 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+54413765 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+54442015 init start pid=10816
+54442140 regions=3151 after 125 ms
+54442234 entry_gom=0x76D1B940 class=0x321BCAA0
+54442234 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+54442250 fast entry world=0x240361000 battle=0x22D88ED20 char=0x320141C0
+54442250 char=0x320141C0 after 235 ms
+54442250 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+54442250 entry_roots=1 world=0x240361000 battle=0x22D88ED20 after 235 ms
+54442250 world_class=0x31FB91A0 after 235 ms
+54442250 world_instance=0x240361000 after 235 ms
+54442265 instance_scan=2 after 250 ms
+54442265 init done after 250 ms
+54442765 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+54450953 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+54459203 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+54467421 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+54475671 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+54529734 init start pid=10816
+54529859 regions=3140 after 125 ms
+54529859 entry_gom=0x76D1B940 class=0x321BCAA0
+54529859 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+54529875 fast entry world=0x240361000 battle=0x22D88ED20 char=0x320141C0
+54529875 char=0x320141C0 after 141 ms
+54529875 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+54529875 entry_roots=1 world=0x240361000 battle=0x22D88ED20 after 141 ms
+54529875 world_class=0x31FB91A0 after 141 ms
+54529875 world_instance=0x240361000 after 141 ms
+54529875 instance_scan=3 after 141 ms
+54529875 init done after 141 ms
+54530375 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+54538593 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+54546812 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+54555046 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+54563265 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+54571656 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+54611593 init start pid=10816
+54611718 regions=3118 after 125 ms
+54611734 entry_gom=0x76D1B940 class=0x321BCAA0
+54611734 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+54611734 fast entry world=0x240361000 battle=0x22D88ED20 char=0x320141C0
+54611734 char=0x320141C0 after 141 ms
+54611734 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+54611734 entry_roots=1 world=0x240361000 battle=0x22D88ED20 after 141 ms
+54611734 world_class=0x31FB91A0 after 141 ms
+54611734 world_instance=0x240361000 after 141 ms
+54611734 instance_scan=14 after 141 ms
+54611734 init done after 141 ms
+54612234 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+54620515 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+54639000 init start pid=10816
+54639140 regions=3112 after 140 ms
+54639140 entry_gom=0x76D1B940 class=0x321BCAA0
+54639140 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+54639140 fast entry world=0x240361000 battle=0x22D88ED20 char=0x320141C0
+54639140 char=0x320141C0 after 140 ms
+54639140 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0
+54639140 entry_roots=1 world=0x240361000 battle=0x22D88ED20 after 140 ms
+54639140 world_class=0x31FB91A0 after 140 ms
+54639140 world_instance=0x240361000 after 140 ms
+54639140 instance_scan=7 after 140 ms
+54639140 init done after 140 ms
+54639640 entry_roots_class world=0x240361000 battle=0x22D88ED20 bm=0x2406F4800 camera=0x24052F1C0

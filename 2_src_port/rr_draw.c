@@ -44,6 +44,23 @@ static RGBA player_color(const RR_PLAYER* p) {
     return color ? color : slot_color(0);
 }
 
+/* Select a dedicated chams palette entry from the replicated player role.
+ * This is intentionally separate from player_color(), which remains the ESP
+ * color source for boxes, skeletons, radar markers and labels.
+ */
+static RGBA player_cham_color(const RR_PLAYER* p) {
+    const char* role = p->role;
+
+    if ((p->relationships & RR_REL_POLICE) || (role && strstr(role, "cop")))
+        return slot_color(BR_COLOR_COP_CHAMS);
+
+    if (role && (strstr(role, "robber") || strstr(role, "criminal")))
+        return slot_color(BR_COLOR_CRIMINAL_CHAMS);
+
+    /* Civilian aliases and unrecognized roles use the citizen setting. */
+    return slot_color(BR_COLOR_CITIZEN_CHAMS);
+}
+
 static void corner_box(float x, float y, float w, float h, RGBA col, float stroke) {
     float cx = w * 0.28f;
     float cy = h * 0.28f;
@@ -77,7 +94,7 @@ typedef struct {
 } CHAM_VISUAL_POSE;
 static int g_cham_diag_enabled;
 static RR_CHAM_DIAG g_cham_diag;
-void cham_diag_enable(void) { memset(&g_cham_diag,0,sizeof(g_cham_diag)); g_cham_diag_enabled=1; }
+void cham_diag_enable(void) { memset(&g_cham_diag, 0, sizeof(g_cham_diag)); g_cham_diag_enabled = 1; }
 RR_CHAM_DIAG cham_diag_results(void) { return g_cham_diag; }
 
 static const CHAM_VISUAL_POSE* cham_visual_pose(const RR_PLAYER* p) {
@@ -95,8 +112,8 @@ static const CHAM_VISUAL_POSE* cham_visual_pose(const RR_PLAYER* p) {
     }
     previous->last_used = serial;
     int same = previous->object == p->addr && previous->id == p->id && previous->rig == p->cham_rig &&
-               previous->crouch == p->crouch && previous->dead == p->dead && previous->inveh == p->inveh &&
-               previous->full_rig == p->full_rig;
+        previous->crouch == p->crouch && previous->dead == p->dead && previous->inveh == p->inveh &&
+        previous->full_rig == p->full_rig;
     uint32_t elapsed = p->cham_sample_at - previous->sampled_at;
     if (same && elapsed == 0) {
         if (g_cham_diag_enabled) ++g_cham_diag.repeated;
@@ -107,11 +124,13 @@ static const CHAM_VISUAL_POSE* cham_visual_pose(const RR_PLAYER* p) {
     /* A skin matrix includes the inverse bind transform. Its translation
        moves as the torso rotates, even when the character root is stationary. */
     RR_V3 root = p->mesh_bones ? p->pos :
-        (RR_V3){first_bone[3], first_bone[7], first_bone[11]};
+        (RR_V3) {
+        first_bone[3], first_bone[7], first_bone[11]
+    };
     float dx = root.x - previous->root.x;
     float dy = root.y - previous->root.y;
     float dz = root.z - previous->root.z;
-    int reset = !same || elapsed >= 100 || dx*dx + dy*dy + dz*dz > 0.64f;
+    int reset = !same || elapsed >= 100 || dx * dx + dy * dy + dz * dz > 0.64f;
     if (g_cham_diag_enabled) {
         ++g_cham_diag.fresh;
         int identity = previous->object == p->addr && previous->id == p->id && previous->rig == p->cham_rig;
@@ -119,69 +138,71 @@ static const CHAM_VISUAL_POSE* cham_visual_pose(const RR_PLAYER* p) {
         else {
             if (!same) ++g_cham_diag.state;
             if (elapsed >= 100) ++g_cham_diag.gap;
-            if (dx*dx+dy*dy+dz*dz > 0.64f) ++g_cham_diag.jump;
-            if (elapsed > g_cham_diag.max_gap_ms) g_cham_diag.max_gap_ms=elapsed;
-            float jump=sqrtf(dx*dx+dy*dy+dz*dz);
-            if (jump > g_cham_diag.max_jump_m) g_cham_diag.max_jump_m=jump;
-            RR_V3 bone={p->cham_skin[RR_RIG_M_HEAD_1_JNT][3]-root.x,p->cham_skin[RR_RIG_M_HEAD_1_JNT][7]-root.y,p->cham_skin[RR_RIG_M_HEAD_1_JNT][11]-root.z};
-            if (same && elapsed>0 && elapsed<100) {
-                if (jump>.01f) {
+            if (dx * dx + dy * dy + dz * dz > 0.64f) ++g_cham_diag.jump;
+            if (elapsed > g_cham_diag.max_gap_ms) g_cham_diag.max_gap_ms = elapsed;
+            float jump = sqrtf(dx * dx + dy * dy + dz * dz);
+            if (jump > g_cham_diag.max_jump_m) g_cham_diag.max_jump_m = jump;
+            RR_V3 bone = { p->cham_skin[RR_RIG_M_HEAD_1_JNT][3] - root.x,p->cham_skin[RR_RIG_M_HEAD_1_JNT][7] - root.y,p->cham_skin[RR_RIG_M_HEAD_1_JNT][11] - root.z };
+            if (same && elapsed > 0 && elapsed < 100) {
+                if (jump > .01f) {
                     ++g_cham_diag.moving_samples;
-                    float prev_len=sqrtf(previous->diag_delta.x*previous->diag_delta.x + previous->diag_delta.y*previous->diag_delta.y + previous->diag_delta.z*previous->diag_delta.z);
-                    float dot=dx*previous->diag_delta.x+dy*previous->diag_delta.y+dz*previous->diag_delta.z;
-                    if (previous->diag_have_delta && prev_len>.01f && dot<-.5f*jump*prev_len) ++g_cham_diag.reversals;
+                    float prev_len = sqrtf(previous->diag_delta.x * previous->diag_delta.x + previous->diag_delta.y * previous->diag_delta.y + previous->diag_delta.z * previous->diag_delta.z);
+                    float dot = dx * previous->diag_delta.x + dy * previous->diag_delta.y + dz * previous->diag_delta.z;
+                    if (previous->diag_have_delta && prev_len > .01f && dot < -.5f * jump * prev_len) ++g_cham_diag.reversals;
                 }
                 if (previous->diag_have_bone) {
-                    float bx=bone.x-previous->diag_bone.x, by=bone.y-previous->diag_bone.y, bz=bone.z-previous->diag_bone.z;
-                    float delta=sqrtf(bx*bx+by*by+bz*bz);
-                    if (delta>.15f) ++g_cham_diag.bone_jumps;
-                    if (delta>g_cham_diag.max_bone_delta_m) g_cham_diag.max_bone_delta_m=delta;
+                    float bx = bone.x - previous->diag_bone.x, by = bone.y - previous->diag_bone.y, bz = bone.z - previous->diag_bone.z;
+                    float delta = sqrtf(bx * bx + by * by + bz * bz);
+                    if (delta > .15f) ++g_cham_diag.bone_jumps;
+                    if (delta > g_cham_diag.max_bone_delta_m) g_cham_diag.max_bone_delta_m = delta;
                 }
-                const int indices[3]={RR_RIG_M_HEAD_1_JNT,RR_RIG_L_ARM_2_JNT,RR_RIG_R_ARM_2_JNT};
-                for (int q=0;q<3;++q) {
-                    const float* mat=p->cham_skin[indices[q]];
-                    RR_V3 now_shape={mat[3]-root.x,mat[7]-root.y,mat[11]-root.z};
-                    RR_V3 last=previous->diag_shape[q], older=previous->diag_shape_older[q];
-                    float dx1=now_shape.x-last.x,dy1=now_shape.y-last.y,dz1=now_shape.z-last.z;
-                    float dx2=now_shape.x-older.x,dy2=now_shape.y-older.y,dz2=now_shape.z-older.z;
-                    if (previous->diag_shape_count>=2 && dx1*dx1+dy1*dy1+dz1*dz1>.0225f && dx2*dx2+dy2*dy2+dz2*dz2<.0064f) {
-                        if (q==0) ++g_cham_diag.head_spikes;
-                        else if (q==1) ++g_cham_diag.left_spikes;
+                const int indices[3] = { RR_RIG_M_HEAD_1_JNT,RR_RIG_L_ARM_2_JNT,RR_RIG_R_ARM_2_JNT };
+                for (int q = 0;q < 3;++q) {
+                    const float* mat = p->cham_skin[indices[q]];
+                    RR_V3 now_shape = { mat[3] - root.x,mat[7] - root.y,mat[11] - root.z };
+                    RR_V3 last = previous->diag_shape[q], older = previous->diag_shape_older[q];
+                    float dx1 = now_shape.x - last.x, dy1 = now_shape.y - last.y, dz1 = now_shape.z - last.z;
+                    float dx2 = now_shape.x - older.x, dy2 = now_shape.y - older.y, dz2 = now_shape.z - older.z;
+                    if (previous->diag_shape_count >= 2 && dx1 * dx1 + dy1 * dy1 + dz1 * dz1 > .0225f && dx2 * dx2 + dy2 * dy2 + dz2 * dz2 < .0064f) {
+                        if (q == 0) ++g_cham_diag.head_spikes;
+                        else if (q == 1) ++g_cham_diag.left_spikes;
                         else ++g_cham_diag.right_spikes;
                     }
-                    previous->diag_shape_older[q]=last;
-                    previous->diag_shape[q]=now_shape;
+                    previous->diag_shape_older[q] = last;
+                    previous->diag_shape[q] = now_shape;
                 }
-                if (previous->diag_shape_count<2) ++previous->diag_shape_count;
-            } else {
-                previous->diag_shape_count=0;
+                if (previous->diag_shape_count < 2) ++previous->diag_shape_count;
             }
-            previous->diag_delta=(RR_V3){dx,dy,dz}; previous->diag_have_delta=same && elapsed>0 && elapsed<100;
-            previous->diag_bone=bone; previous->diag_have_bone=1;
+            else {
+                previous->diag_shape_count = 0;
+            }
+            previous->diag_delta = (RR_V3){ dx,dy,dz }; previous->diag_have_delta = same && elapsed > 0 && elapsed < 100;
+            previous->diag_bone = bone; previous->diag_have_bone = 1;
         }
-        if (!identity) { previous->diag_have_delta=0; previous->diag_have_bone=0; previous->diag_shape_count=0; }
+        if (!identity) { previous->diag_have_delta = 0; previous->diag_have_bone = 0; previous->diag_shape_count = 0; }
     }
     /* Keep the filtered rig close to the current pose while damping small
      * animation jitter. A long filter makes moving targets visibly trail. */
     float blend = (float)elapsed / ((float)elapsed + 3.0f);
     if (reset) {
         memcpy(previous->skin, p->cham_skin, sizeof(previous->skin));
-    } else {
+    }
+    else {
         /* Carry the entire pose with the live root immediately. Filter only
          * the remaining bone motion so the body stays with the runner. */
         for (int bone = 0; bone < RR_CHAM_BONES; ++bone) {
             float* smoothed = previous->skin[bone];
             const float* live = p->cham_skin[bone];
-            if(!isfinite(live[0]) || !isfinite(smoothed[0])) {
-                memcpy(smoothed,live,sizeof(previous->skin[bone]));continue;
+            if (!isfinite(live[0]) || !isfinite(smoothed[0])) {
+                memcpy(smoothed, live, sizeof(previous->skin[bone]));continue;
             }
             /* Keep the root and torso responsive; damp arm/hand jitter and
              * damp the legs separately while seated in a moving vehicle. */
-            float bone_blend=blend;
-            if (bone>=RR_RIG_L_ARM_0_JNT && bone<=RR_RIG_R_ARMTWIST_JNT)
-                bone_blend=(float)elapsed/((float)elapsed+20.0f);
-            else if (p->inveh && bone>=RR_RIG_L_LEG_1_JNT && bone<=RR_RIG_R_FOOT_2_JNT)
-                bone_blend=(float)elapsed/((float)elapsed+14.0f);
+            float bone_blend = blend;
+            if (bone >= RR_RIG_L_ARM_0_JNT && bone <= RR_RIG_R_ARMTWIST_JNT)
+                bone_blend = (float)elapsed / ((float)elapsed + 20.0f);
+            else if (p->inveh && bone >= RR_RIG_L_LEG_1_JNT && bone <= RR_RIG_R_FOOT_2_JNT)
+                bone_blend = (float)elapsed / ((float)elapsed + 14.0f);
             smoothed[3] += dx;
             smoothed[7] += dy;
             smoothed[11] += dz;
@@ -192,17 +213,17 @@ static const CHAM_VISUAL_POSE* cham_visual_pose(const RR_PLAYER* p) {
     /* Project markers from the same filtered world pose as the mesh. Keep
        camera motion immediate by applying this before screen projection. */
     for (int i = 0; i < RR_MAX_BONES + 2; ++i) {
-        if (p->full_rig && i>=2) {
-            int bone=i-2;
-            if(!isfinite(p->bone[bone][0]) || !isfinite(p->bone[bone][1]) || !isfinite(p->bone[bone][2])) {
-                previous->anchors[i]=(RR_V3){NAN,NAN,NAN};continue;
+        if (p->full_rig && i >= 2) {
+            int bone = i - 2;
+            if (!isfinite(p->bone[bone][0]) || !isfinite(p->bone[bone][1]) || !isfinite(p->bone[bone][2])) {
+                previous->anchors[i] = (RR_V3){ NAN,NAN,NAN };continue;
             }
-            const float* m=previous->skin[bone];
-            const float* a=rr_cham_bones[bone].anchor;
-            previous->anchors[i]=(RR_V3){
-                m[0]*a[0]+m[1]*a[1]+m[2]*a[2]+m[3],
-                m[4]*a[0]+m[5]*a[1]+m[6]*a[2]+m[7],
-                m[8]*a[0]+m[9]*a[1]+m[10]*a[2]+m[11]};
+            const float* m = previous->skin[bone];
+            const float* a = rr_cham_bones[bone].anchor;
+            previous->anchors[i] = (RR_V3){
+                m[0] * a[0] + m[1] * a[1] + m[2] * a[2] + m[3],
+                m[4] * a[0] + m[5] * a[1] + m[6] * a[2] + m[7],
+                m[8] * a[0] + m[9] * a[1] + m[10] * a[2] + m[11] };
             continue;
         }
         RR_V3 live;
@@ -239,42 +260,43 @@ static int mesh_highlight(const RR_PLAYER* p, const RR_CAMERA* cam, int vw, int 
     if (!p->cham_valid) return 0;
     const float (*skin)[12] = p->cham_skin;
     if (p->cham_rig && p->cham_sample_at) skin = cham_visual_pose(p)->skin;
-    float points[RR_CHAM_VERTICES*2];
+    float points[RR_CHAM_VERTICES * 2];
     RR_V3 positions[RR_CHAM_VERTICES];
-    for (int i=0;i<RR_CHAM_VERTICES;++i) {
-        const RR_CHAM_VERTEX* v=&rr_cham_vertices[i]; RR_V3 world={0,0,0}; float total=0;
-        for (int k=0;k<4;++k) {
-            float w=v->weight[k]; int bone=v->bone[k];
-            if (w<=0.0001f || bone>=RR_CHAM_BONES) continue;
-            const float* m=skin[bone];
-            world.x+=w*(m[0]*v->p[0]+m[1]*v->p[1]+m[2]*v->p[2]+m[3]);
-            world.y+=w*(m[4]*v->p[0]+m[5]*v->p[1]+m[6]*v->p[2]+m[7]);
-            world.z+=w*(m[8]*v->p[0]+m[9]*v->p[1]+m[10]*v->p[2]+m[11]);
-            total+=w;
+    for (int i = 0;i < RR_CHAM_VERTICES;++i) {
+        const RR_CHAM_VERTEX* v = &rr_cham_vertices[i]; RR_V3 world = { 0,0,0 }; float total = 0;
+        for (int k = 0;k < 4;++k) {
+            float w = v->weight[k]; int bone = v->bone[k];
+            if (w <= 0.0001f || bone >= RR_CHAM_BONES) continue;
+            const float* m = skin[bone];
+            world.x += w * (m[0] * v->p[0] + m[1] * v->p[1] + m[2] * v->p[2] + m[3]);
+            world.y += w * (m[4] * v->p[0] + m[5] * v->p[1] + m[6] * v->p[2] + m[7]);
+            world.z += w * (m[8] * v->p[0] + m[9] * v->p[1] + m[10] * v->p[2] + m[11]);
+            total += w;
         }
-        positions[i].x=positions[i].y=positions[i].z=NAN;
-        if (total<0.9f || total>1.1f || !isfinite(world.x) || !isfinite(world.y) || !isfinite(world.z)) continue;
-        float dx=world.x-p->pos.x,dy=world.y-p->pos.y,dz=world.z-p->pos.z;
-        if (dx*dx+dy*dy+dz*dz>36.0f) continue;
-        positions[i]=world;
+        positions[i].x = positions[i].y = positions[i].z = NAN;
+        if (total < 0.9f || total>1.1f || !isfinite(world.x) || !isfinite(world.y) || !isfinite(world.z)) continue;
+        float dx = world.x - p->pos.x, dy = world.y - p->pos.y, dz = world.z - p->pos.z;
+        if (dx * dx + dy * dy + dz * dz > 36.0f) continue;
+        positions[i] = world;
     }
-    game_w2s_many(cam,positions,RR_CHAM_VERTICES,vw,vh,points);
-    return r_fill_triangles(points,RR_CHAM_VERTICES,rr_cham_triangles,RR_CHAM_TRIANGLES,
-                            (color&0x00FFFFFFu)|0x66000000u)>0;
+    game_w2s_many(cam, positions, RR_CHAM_VERTICES, vw, vh, points);
+    /* Alpha changed from 0x66 (40%) to 0xFF (100%) for solid, opaque chams */
+    return r_fill_triangles(points, RR_CHAM_VERTICES, rr_cham_triangles, RR_CHAM_TRIANGLES,
+        (color & 0x00FFFFFFu) | 0xFF000000u) > 0;
 }
 
 /* Draw anatomical parent links. Attachment helpers can be parked at the
  * character origin and must not appear as body skeleton segments. */
 static void draw_full_skeleton(const RR_PLAYER* p, const RR_CAMERA* cam, int vw, int vh) {
-    RR_V3 world[RR_CHAM_BONES]; float xy[RR_CHAM_BONES*2];
-    memcpy(world,p->bone,sizeof(world));
-    game_w2s_many(cam,world,RR_CHAM_BONES,vw,vh,xy);
-    for (int b=0;b<RR_CHAM_BONES;++b) {
-        int parent=rr_cham_bones[b].parent;
-        if (parent<0 || parent>=RR_CHAM_BONES) continue;
-        if(!rr_rig_is_skeleton_joint(b) || !rr_rig_is_skeleton_joint(parent))continue;
-        float x=xy[b*2],y=xy[b*2+1],px=xy[parent*2],py=xy[parent*2+1];
-        if (isfinite(x) && isfinite(y) && isfinite(px) && isfinite(py)) r_line(px,py,x,y);
+    RR_V3 world[RR_CHAM_BONES]; float xy[RR_CHAM_BONES * 2];
+    memcpy(world, p->bone, sizeof(world));
+    game_w2s_many(cam, world, RR_CHAM_BONES, vw, vh, xy);
+    for (int b = 0;b < RR_CHAM_BONES;++b) {
+        int parent = rr_cham_bones[b].parent;
+        if (parent < 0 || parent >= RR_CHAM_BONES) continue;
+        if (!rr_rig_is_skeleton_joint(b) || !rr_rig_is_skeleton_joint(parent))continue;
+        float x = xy[b * 2], y = xy[b * 2 + 1], px = xy[parent * 2], py = xy[parent * 2 + 1];
+        if (isfinite(x) && isfinite(y) && isfinite(px) && isfinite(py)) r_line(px, py, x, y);
     }
 }
 
@@ -299,15 +321,15 @@ static void fmt_copy(char* out, size_t n, const char* a, const char* b) {
 
 static int world_marker_visible(const RR_PLAYER* p, const BR_Config* b) {
     return ((p->is_loot == 1 && b->show_loot) || (p->is_loot == 2 && b->show_loot_nodes))
-               ? br_loot_rarity_visible(b, p->loot_rarity)
-               : (p->is_loot == 3 && b->show_containers) ||
-           (p->is_loot == 4 && b->show_doors) ||
-           (p->is_loot == 5 && b->show_dropped_loot) ||
-           (p->is_loot == 6 && b->show_vehicle_loot);
+        ? br_loot_rarity_visible(b, p->loot_rarity)
+        : (p->is_loot == 3 && b->show_containers) ||
+        (p->is_loot == 4 && b->show_doors) ||
+        (p->is_loot == 5 && b->show_dropped_loot) ||
+        (p->is_loot == 6 && b->show_vehicle_loot);
 }
 
 static void draw_radar(const RR_PLAYER* arr, int n, const RR_CAMERA* cam,
-                       int vw, int vh, const BR_Config* b) {
+    int vw, int vh, const BR_Config* b) {
     const RR_PLAYER* local = NULL;
     for (int i = 0; i < n; ++i) {
         if (arr[i].valid && arr[i].local == RR_LOCAL_CONFIRMED) {
@@ -325,7 +347,8 @@ static void draw_radar(const RR_PLAYER* arr, int n, const RR_CAMERA* cam,
     if (!(length > 0.01f) || !isfinite(length)) {
         fx = sinf(local->rot_yaw);
         fz = cosf(local->rot_yaw);
-    } else {
+    }
+    else {
         fx /= length;
         fz /= length;
     }
@@ -343,21 +366,22 @@ static void draw_radar(const RR_PLAYER* arr, int n, const RR_CAMERA* cam,
         if (p->is_vehicle && (!b->radar_world || !b->show_vehicle_markers)) continue;
         if (p->is_loot) {
             if (!b->radar_world || !world_marker_visible(p, b)) continue;
-        } else if (!p->is_vehicle && !rr_relationship_allowed(p->relationships, b->show_clan, b->show_police)) continue;
+        }
+        else if (!p->is_vehicle && !rr_relationship_allowed(p->relationships, b->show_clan, b->show_police)) continue;
         float dx = p->pos.x - local->pos.x, dz = p->pos.z - local->pos.z;
-        float lateral=dx*fz-dz*fx, forward=dx*fx+dz*fz;
-        if (!(fabsf(lateral)<=range && fabsf(forward)<=range)) continue;
-        float x = cx + lateral*(plot_x/range), y = cy - forward*(plot_y/range);
+        float lateral = dx * fz - dz * fx, forward = dx * fx + dz * fz;
+        if (!(fabsf(lateral) <= range && fabsf(forward) <= range)) continue;
+        float x = cx + lateral * (plot_x / range), y = cy - forward * (plot_y / range);
         if (p->is_vehicle) {
             r_fill_ellipse(x, y, 2.8f, 2.8f, RRGB(255, 214, 110));
             continue;
         }
         if (p->is_loot) {
             RGBA color = p->is_loot == 1 ? RRGB(235, 235, 235) :
-                         p->is_loot == 2 ? RRGB(201, 155, 255) :
-                         p->is_loot == 3 ? RRGB(255, 190, 92) :
-                         p->is_loot == 4 ? RRGB(200, 200, 200) :
-                         p->is_loot == 5 ? RRGB(111, 232, 145) : RRGB(105, 178, 255);
+                p->is_loot == 2 ? RRGB(201, 155, 255) :
+                p->is_loot == 3 ? RRGB(255, 190, 92) :
+                p->is_loot == 4 ? RRGB(200, 200, 200) :
+                p->is_loot == 5 ? RRGB(111, 232, 145) : RRGB(105, 178, 255);
             r_fill_ellipse(x, y, 2.3f, 2.3f, color);
             continue;
         }
@@ -408,9 +432,8 @@ static void draw_vehicle_cham(const RR_PLAYER* p, const RR_CAMERA* cam, int vw, 
         top = fminf(top, y); bottom = fmaxf(bottom, y);
     }
     if (right < 0 || bottom < 0 || left > vw || top > vh || right - left < 2.0f || bottom - top < 2.0f) return;
-    /* A single translucent amber identifies the vehicle independently of the
-     * role colors used for its occupants. */
-    RGBA color = RARGB(80, 255, 181, 65);
+    /* Keep vehicle chams independent from player ESP and player chams colors. */
+    RGBA color = slot_color(BR_COLOR_VEHICLE_CHAMS);
     r_fill_triangles(projected, mesh->vertices, mesh->triangles, mesh->faces, color);
 }
 
@@ -427,7 +450,7 @@ static void draw_loot(const RR_PLAYER* p, const RR_CAMERA* cam, int vw, int vh) 
     const char* prefix = p->is_loot == 2 ? "Node: " : "";
     char label[RR_NAME_MAX + 48];
     snprintf(label, sizeof(label), "%s%s%s%s (%.0f m)", prefix, name,
-             rarity ? " / " : "", rarity_names[rarity], p->dist);
+        rarity ? " / " : "", rarity_names[rarity], p->dist);
     RGBA color = rarity_colors[rarity];
     if (p->is_loot == 2) r_ellipse(x, y, 4.0f, 4.0f, color, 1.5f);
     else r_fill_ellipse(x, y, 4.0f, 4.0f, color);
@@ -437,34 +460,35 @@ static void draw_loot(const RR_PLAYER* p, const RR_CAMERA* cam, int vw, int vh) 
 
 void draw_esp(const RR_PLAYER* arr, int n, const RR_CAMERA* cam, int vw, int vh) {
     BR_Config* b = br_get();
-    b->telem_cham_n=0;
+    b->telem_cham_n = 0;
     if (!b->enabled) return;
     /* The screen-space FOV circle does not depend on a player or camera. */
     if (!arr || !cam || !cam->valid || n < 0) n = 0;
 
     float line_w = (float)(b->line_w < 1 ? 1 : (b->line_w > 4 ? 4 : b->line_w));
     if (vw < 16 || vh < 16) return;
-    if (n>RR_MAX_PLAYERS) n=RR_MAX_PLAYERS;
+    if (n > RR_MAX_PLAYERS) n = RR_MAX_PLAYERS;
 
-    if ((b->cham_on || b->vehicle_chams) && n>0) {
+    if ((b->cham_on || b->vehicle_chams) && n > 0) {
         /* Always put vehicles behind player chams, regardless of roster order. */
-        if (b->vehicle_chams) for (int i=0;i<n;++i) {
-            const RR_PLAYER* p=&arr[i];
+        if (b->vehicle_chams) for (int i = 0;i < n;++i) {
+            const RR_PLAYER* p = &arr[i];
             if (!p->valid || !p->is_vehicle || !p->vehicle_cham_valid ||
-                (b->max_distance>0 && p->dist>(float)b->max_distance/100.0f)) continue;
+                (b->max_distance > 0 && p->dist > (float)b->max_distance / 100.0f)) continue;
             draw_vehicle_cham(p, cam, vw, vh);
         }
         gpu_mesh_flush();
-        for (int i=0;i<n;++i) {
-            const RR_PLAYER* p=&arr[i];
+        for (int i = 0;i < n;++i) {
+            const RR_PLAYER* p = &arr[i];
             if (!p->valid || (p->local && !b->show_self) || p->is_loot ||
-                (b->max_distance>0 && p->dist>(float)b->max_distance/100.0f)) continue;
+                (b->max_distance > 0 && p->dist > (float)b->max_distance / 100.0f)) continue;
             if (p->is_vehicle) continue;
             if (!b->cham_on || !p->cham_valid) continue;
             if (!rr_relationship_allowed(p->relationships, b->show_clan, b->show_police)) continue;
-            float fx,fy,hx,hy;
-            if (!game_w2s(cam,&p->pos,vw,vh,&fx,&fy) && !game_w2s(cam,&p->head,vw,vh,&hx,&hy)) continue;
-            if (mesh_highlight(p,cam,vw,vh,player_color(p))) {
+            float fx, fy, hx, hy;
+            if (!game_w2s(cam, &p->pos, vw, vh, &fx, &fy) && !game_w2s(cam, &p->head, vw, vh, &hx, &hy)) continue;
+            /* Chams use a per-role palette; ESP role colors remain unchanged. */
+            if (mesh_highlight(p, cam, vw, vh, player_cham_color(p))) {
                 ++b->telem_cham_n;
             }
         }
@@ -476,8 +500,8 @@ void draw_esp(const RR_PLAYER* arr, int n, const RR_CAMERA* cam, int vw, int vh)
         for (int i = 0; i < n; ++i) if (arr[i].valid && arr[i].local) { self = &arr[i]; break; }
         gpu_font(12.0f);
         r_text(12.0f, 12.0f, !self ? "SELF: unavailable" :
-               self->hidden_in_object ? "SELF: hiding object detected" : "SELF: no hiding object detected",
-               RRGB(227, 215, 252), RT_LEFT | RT_OUTLINE);
+            self->hidden_in_object ? "SELF: hiding object detected" : "SELF: no hiding object detected",
+            RRGB(227, 215, 252), RT_LEFT | RT_OUTLINE);
     }
     int drawn = 0;
     for (int i = 0; i < n; i++) {
@@ -491,8 +515,8 @@ void draw_esp(const RR_PLAYER* arr, int n, const RR_CAMERA* cam, int vw, int vh)
 
         if (p->is_loot) {
             int visible = (p->is_loot == 1 && b->show_loot) ||
-                          (p->is_loot == 2 && b->show_loot_nodes) ||
-                          world_marker_visible(p, b);
+                (p->is_loot == 2 && b->show_loot_nodes) ||
+                world_marker_visible(p, b);
             if (visible && (p->is_loot > 2 || br_loot_rarity_visible(b, p->loot_rarity)))
                 draw_loot(p, cam, vw, vh);
             continue;
@@ -569,8 +593,9 @@ void draw_esp(const RR_PLAYER* arr, int n, const RR_CAMERA* cam, int vw, int vh)
             (b->skel_distance <= 0 || p->dist <= (float)b->skel_distance / 100.0f)) {
             gpu_pen(col, line_w);
             if (p->full_rig && p->nbones == RR_CHAM_BONES) {
-                draw_full_skeleton(p,cam,vw,vh);
-            } else if (p->nbones > 1) {
+                draw_full_skeleton(p, cam, vw, vh);
+            }
+            else if (p->nbones > 1) {
                 /* spine chain and head from the animated SkeletonModel rig */
                 for (int k = 0; k + 1 < p->nbones; k++) {
                     float ax, ay, bx2, by2;
@@ -585,7 +610,8 @@ void draw_esp(const RR_PLAYER* arr, int n, const RR_CAMERA* cam, int vw, int vh)
                     if (r > 11.0f) r = 11.0f;
                     r_fill_ellipse(hxx, hyy - r * 0.5f, r, r, col);
                 }
-            } else {
+            }
+            else {
                 /* no rig data yet: two-segment torso fallback */
                 float mid = by + bh * 0.55f;
                 r_line(fx, by + bh * 0.10f, fx, mid);
@@ -685,21 +711,9 @@ void draw_esp(const RR_PLAYER* arr, int n, const RR_CAMERA* cam, int vw, int vh)
         if (r < 10) r = 10;
         if (r > 1200) r = 1200;
         r_ellipse((float)vw * 0.5f, (float)vh * 0.5f, (float)r, (float)r,
-                  slot_color(14), 1.0f);
+            slot_color(14), 1.0f);
     }
     if (b->radar_on && n > 0) draw_radar(arr, n, cam, vw, vh, b);
 
     b->telem_targets = drawn;
 }
-
-
-
-
-
-
-
-
-
-
-
-
